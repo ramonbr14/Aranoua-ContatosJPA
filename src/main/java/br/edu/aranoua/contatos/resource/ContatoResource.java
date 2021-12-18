@@ -62,7 +62,7 @@ public class ContatoResource {
 		if(contatoService.listarContato(id).isPresent()) {
 			contato.setId(id);
 			return ResponseEntity.ok(contatoService.atualizar(contato));
-		}
+	 	}
 		return ResponseEntity.notFound().build();
 		}
 	
